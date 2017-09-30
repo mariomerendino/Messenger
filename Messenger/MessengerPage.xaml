@@ -1,4 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Messenger" x:Class="Messenger.MessengerPage">
-	<Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" />
+    <ScrollView>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label x:Name= "title"  Text="Messenger"  />
+            <Entry x:Name= "unameField" Placeholder = "Username"/>
+            <Entry x:Name= "pwordField" Placeholder = "********" IsPassword = "true"/>
+            <Button Clicked = "login" Text = "Login" Margin="100, 50, 0, 0" />
+            <Label Text="Not Registered?"  />
+            <Button Clicked = "Register" Text = "Register" Margin="100, 20, 0, 0" />
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

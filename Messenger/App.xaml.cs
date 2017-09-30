@@ -1,14 +1,16 @@
-﻿using Xamarin.Forms;
-
+﻿using System;
+using Xamarin.Forms;
+using Microsoft.WindowsAzure.MobileServices;
 namespace Messenger
 {
     public partial class App : Application
     {
+		public static MobileServiceClient MobileService = new MobileServiceClient("https://merendinomessenger.azurewebsites.net");
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MessengerPage();
+            MainPage = new NavigationPage(new MessengerPage());
         }
 
         protected override void OnStart()
@@ -25,5 +27,6 @@ namespace Messenger
         {
             // Handle when your app resumes
         }
+
     }
 }

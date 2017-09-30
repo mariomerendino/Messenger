@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Messenger" x:Class="Messenger.Registration">
+	<ContentPage.Content>
+        <!--<ScrollView>-->
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Entry x:Name= "unameField" Placeholder = "Enter a Username"/>
+                <Entry x:Name= "pwordField" Placeholder = "Enter a Password" IsPassword = "true"/>
+                <Entry x:Name= "pwordFieldConfirm" Placeholder = "Confirm Password" IsPassword = "true"/>
+                <Entry x:Name= "fName" Placeholder = "First Name"/>
+                <Entry x:Name= "lName" Placeholder = "Last Name"/>
+                <Button Clicked = "register" Text = "Register" Margin="100, 50, 0, 0" />
+            </StackLayout>
+        <!--</ScrollView>--> 
+	</ContentPage.Content>
+</ContentPage>
